@@ -9,9 +9,9 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var fruits = ["Watermelon","Apple","Orange","Strawberry","Pear"]
+    var fruits = ["Watermelon🍉","Apple🍎","Orange🍊","Strawberry🍓","Pear🍐"]
     
-    var price = ["500","100","90","200","150"]
+    var price = ["💲500","💲100","💲90","💲200","💲150"]
     var priceInInt = [500,100,90,200,150]
     
     var fruitImages = ["Watermelon","Apple","Orange","Strawberry","Pear"]
@@ -97,7 +97,7 @@ class TableViewController: UITableViewController {
             let temp = self.priceInInt[indexPath.row]           //將勾選到的價錢值(Int)存入temp
             self.arrayforChecked.append(temp)        //append是指將()裡的數從後面放入陣列
             let answer = self.addCheckedNumbers(priceIntArray: self.arrayforChecked)    //將加總直傳入answer
-            self.outputPrice.text = "Total Prices = " + String(answer)
+            self.outputPrice.text = "💰Total Prices = " + String(answer)
             
             //ans += Int(self.price[indexPath.row])!
         })
@@ -121,7 +121,7 @@ class TableViewController: UITableViewController {
                     }
                 }
                 let answer = self.addCheckedNumbers(priceIntArray: self.arrayforChecked)
-                self.outputPrice.text = "Total Prices = " + String(answer)
+                self.outputPrice.text = "💰Total Prices = " + String(answer)
             }
             
             
